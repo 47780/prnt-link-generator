@@ -2,9 +2,9 @@
 <html>
 <body>
 
-<p>Click the button to display a random number.</p>
+<p>Click the button to generate a new link.</p>
 
-<button onclick="rnd_link()">Try it</button>
+<button onclick="rnd_link()">Generate link</button>
 
 <p id="link"></p>
 
@@ -22,10 +22,9 @@ function rnd_link() {
         string += String.fromCharCode(rnd_char)
     }
     url = 'https://prnt.sc/' + string + a + b + c + d
-    document.getElementById("link").innerHTML = '<a href="' + url + '">' + url + '</a>';
+    document.getElementById("link").innerHTML = '<a href="' + url + '" target="_blank" rel="noopener noreferrer">' + url + '</a>';
 }
 </script>
 
 </body>
 </html>
-
