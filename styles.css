@@ -1,0 +1,23 @@
+ body {
+   margin: auto;
+   width: 100%;
+   align-items: center;
+ }
+
+  .main {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    padding-top: 30%;
+  }
+
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    body, .main {
+      width: 100%;      
+    }
+
+    .main {
+      padding-top: 10%;
+    }
+  }
