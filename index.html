@@ -2,12 +2,17 @@
 <html>
 <body>
 
-<a href=<?php
-$url = "https://prnt.sc/";
-$rnd_str = sprintf("%c%c%d",rand(97,122),rand(97,122),rand(0,9999));
-echo($url.$rnd_str);
+<p>Click the button to display a random number.</p>
 
-?>>Link</a>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = Math.trunc((Math.random()*10));
+}
+</script>
 
 </body>
 </html>
