@@ -2,22 +2,57 @@
    margin: auto;
    width: 100%;
    align-items: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 2vw;
  }
 
-  .main {
-    margin: auto;
-    text-align: center;
-    width: 80%;
-    padding-top: 30%;
-  }
+ button {
+   background-color: lightgray;
+   text-align: center;
+   display: inline-block;
+   font-size: 2vw;
+   transition-duration: 0.4s;
+   border: none;
+   padding: 12px 32px;
+ }
 
-  @media only screen and (max-width: 620px) {
+ button:hover {
+   background-color: blanchedalmond;
+ }
+
+.main {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  padding-top: 30%;
+}
+
+.bottom {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  padding-top: 20%;
+  font-size: 1.5vw;
+}
+
+  @media only screen and (max-width: 700px) {
     /* For mobile phones: */
-    body, .main {
-      width: 100%;      
+    body{
+      width: 100%;
+      font-size: 5vw;
     }
 
     .main {
+      width: 100%;
       padding-top: 10%;
+    }
+
+    button {
+      font-size: 4vw;
+      padding: 32px 64px;
+    }
+
+    .bottom {
+      font-size: 2.5vw;
     }
   }
